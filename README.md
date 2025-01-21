@@ -1,37 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Media Search Web Application
 
-## Getting Started
+This web application allows users to search for various types of media content such as music, books, and other media using the iTunes Search API. It features a search bar and displays the search results in a list format, offering an intuitive and responsive design.
 
-First, run the development server:
+<b>Features:</b>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Search Bar: Users can type in search queries for music, books, or other media.
+Search Results: Displays search results in a list format, showing relevant information like name, artist, or book title, and a link to view more details.
+Responsive Design: The app is fully responsive, providing a smooth experience on both desktop and mobile devices.
+Styling: The app uses Tailwind CSS for styling
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<b>Technologies Used:</b>
+React: Functional components and hooks for state management.
+TypeScript: Type-safe components and proper data typing.
+Tailwind CSS: For responsive and utility-first styling.
+Next.js: To handle routing and provide an optimized framework.
+UI Library: NextUI
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<b>Setup Instructions</b>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Prerequisites
+Node.js and npm/yarn installed on your system.
 
-## Learn More
+Clone the Repository
 
-To learn more about Next.js, take a look at the following resources:
+git clone https://github.com/MaggieShpileva/iTunes.git
+cd iTunes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Install Dependencies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+npm install
+or
+yarn install
 
-## Deploy on Vercel
+The app will be available at http://localhost:3000 in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<b>Core Functionality</b>
+Search Bar: The search bar allows users to input a query. The search is triggered on input change or form submit.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# iTunes
+Fetch Data from iTunes Search API: The app uses the iTunes Search API to fetch media content based on the user's query. The API supports searching for various media types (music, movies, podcasts, books, etc.). The response is parsed and displayed in a list.
+
+API Documentation: https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/Searching.html
+
+Search Results Display: Results are displayed below the search bar. Each result is presented with relevant details.
